@@ -1,0 +1,2 @@
+# Cloudflare Pages redirects. Apex (liquid369.wtf) is canonical; send www to it.
+https://www.liquid369.wtf/*  https://liquid369.wtf/:splat  301

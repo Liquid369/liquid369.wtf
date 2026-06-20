@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>liquid369 · Blockchain Infrastructure Engineer</title>
+  <meta name="description" content="The work of liquid369. Validator clients and gossip on Solana, core contribution and shielded payments on PIVX, and years of tooling across Bitcoin, Substrate, and more." />
+  <meta name="author" content="liquid369" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="liquid369 · Blockchain Infrastructure Engineer" />
+  <meta property="og:description" content="Validator clients, gossip, and shielded payments. Solana, PIVX, and a lot of other chains." />
+  <meta property="og:url" content="https://liquid369.wtf/" />
+  <meta property="og:site_name" content="liquid369.wtf" />
+  <meta property="og:image" content="https://liquid369.wtf/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="liquid369 · Blockchain Infrastructure Engineer" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="liquid369 · Blockchain Infrastructure Engineer" />
+  <meta name="twitter:description" content="Validator clients, gossip, and shielded payments. Solana, PIVX, and a lot of other chains." />
+  <meta name="twitter:image" content="https://liquid369.wtf/assets/og.png" />
+  <meta name="twitter:image:alt" content="liquid369 · Blockchain Infrastructure Engineer" />
+  <link rel="canonical" href="https://liquid369.wtf/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebSite", "@id": "https://liquid369.wtf/#website", "url": "https://liquid369.wtf/", "name": "liquid369.wtf", "author": { "@id": "https://liquid369.wtf/#person" } },
+      { "@type": "Person", "@id": "https://liquid369.wtf/#person", "name": "liquid369", "url": "https://liquid369.wtf/", "jobTitle": "Blockchain Infrastructure Engineer", "image": "https://avatars.githubusercontent.com/u/45834289", "sameAs": ["https://github.com/liquid369"] }
+    ]
+  }
+  </script>
+  <meta name="theme-color" content="#06070b" />
+
+  <!-- Fonts: Syne (display) · Martian Mono (terminal) · Sora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500;600&family=Sora:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" />
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500;600&family=Sora:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500;600&family=Sora:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2306070b'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%2362e4ff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%2362e4ff'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <!-- Without JS the scroll-reveal blanking would hide everything; un-blank static content. -->
+  <noscript><style>.reveal{opacity:1!important;transform:none!important;filter:none!important;}</style></noscript>
+</head>
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+  <!-- Atmosphere layers -->
+  <canvas id="mesh" aria-hidden="true"></canvas>
+  <div class="atmos" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__brand" href="#top">
+      <span class="nav__dot" aria-hidden="true"></span>
+      LIQUID<b>369</b>
+    </a>
+    <div class="nav__links">
+      <a href="#solana">Solana</a>
+      <a href="#pivx">PIVX</a>
+      <a href="#chains">Chains</a>
+      <a href="#index">Index</a>
+      <a class="nav__cta" href="https://github.com/liquid369" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    </div>
+  </nav>
+
+  <main id="top" tabindex="-1">
+    <noscript>
+      <div class="wrap" style="padding:120px 0 8px;">
+        <p style="font-family:var(--f-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ice);">JavaScript is off. The live project index needs it.</p>
+        <p style="color:var(--ink-dim);margin:12px 0;max-width:60ch;">The registry and project cards are rendered with JavaScript. With it disabled, the work still lives at the source:</p>
+        <p style="font-family:var(--f-mono);font-size:13px;line-height:2;">
+          → <a href="https://github.com/liquid369" style="color:var(--ice);">github.com/liquid369</a><br />
+          → <a href="https://github.com/liquid369?tab=repositories" style="color:var(--ice);">All public repositories</a><br />
+          → <a href="https://github.com/PIVX-Project" style="color:var(--ice);">The PIVX Project (core contribution)</a>
+        </p>
+      </div>
+    </noscript>
+    <!-- ============================== HERO ============================== -->
+    <header class="hero" data-accent="hero">
+      <div class="brackets" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="wrap">
+        <p class="hero__eyebrow reveal">Blockchain Infrastructure<span aria-hidden="true"> · </span><span id="nav-clock" aria-hidden="true">--:--:-- UTC</span></p>
+        <h1 class="reveal" data-delay="1">
+          I build the software <span class="grad">blockchains <span class="nb">run on</span></span>.
+        </h1>
+        <p class="hero__sub reveal" data-delay="2">
+          I work on <b>validator clients</b>, <b>gossip networks</b>, and <b>shielded payments</b>.
+          Mostly <b>Solana</b> and <b>PIVX</b>, plus a long tail of chains most people have forgotten.
+        </p>
+        <div class="hero__actions reveal" data-delay="3">
+          <a class="btn btn--primary" href="#solana" data-magnetic>Explore the work <span aria-hidden="true">↓</span></a>
+          <a class="btn btn--ghost" href="https://github.com/liquid369" target="_blank" rel="noopener" data-magnetic>@liquid369 <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+        <div class="hud reveal" id="hud" data-delay="4"></div>
+      </div>
+      <div class="scrollcue" aria-hidden="true">Scroll<span></span></div>
+    </header>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee-track"></div>
+    </div>
+
+    <!-- ============================= SOLANA ============================= -->
+    <section class="section" id="solana" data-accent="solana">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__index reveal">01 / ECOSYSTEM</div>
+          <div>
+            <h2 class="section__title reveal">Solana</h2>
+            <p class="section__tag reveal" data-delay="1">Validator clients · gossip · network telemetry</p>
+            <p class="section__blurb reveal" data-delay="2">
+              Most of what I do now. I run and patch the Rust validator clients,
+              reimplemented the gossip protocol from the spec, and built a set of tools
+              that measure the network: latency, vote credits, block production,
+              leader timing, skip rates.
+            </p>
+          </div>
+        </div>
+        <div class="cards" id="cards-solana"></div>
+      </div>
+    </section>
+
+    <!-- ============================== PIVX ============================== -->
+    <section class="section" id="pivx" data-accent="pivx">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__index reveal">02 / ECOSYSTEM</div>
+          <div>
+            <h2 class="section__title reveal">PIVX</h2>
+            <p class="section__tag reveal" data-delay="1">Core full node · shielded payments · wallets</p>
+            <p class="section__blurb reveal" data-delay="2">
+              I've contributed to the PIVX C++ full node and the tools around it for years.
+              Sapling SHIELD privacy, cold-staking, masternode governance, and the wallets,
+              explorers, and payment rails on top.
+            </p>
+          </div>
+        </div>
+        <div class="cards" id="cards-pivx"></div>
+      </div>
+    </section>
+
+    <!-- =========================== BLOCKCHAINS ========================== -->
+    <section class="section" id="chains" data-accent="chains">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__index reveal">03 / ECOSYSTEM</div>
+          <div>
+            <h2 class="section__title reveal">Blockchains</h2>
+            <p class="section__tag reveal" data-delay="1">Bitcoin-family · Substrate · Ethereum · wallets · pools</p>
+            <p class="section__blurb reveal" data-delay="2">
+              Ten years of chains, plenty of them dead now. Bitcoin tooling and explorers,
+              multi-currency wallets, Substrate nodes and relayers, an Ethereum light client,
+              mining pools, Nostr clients, and a pile of altcoin forks.
+            </p>
+          </div>
+        </div>
+        <div class="cards" id="cards-chains"></div>
+      </div>
+    </section>
+
+    <!-- ============================= REGISTRY =========================== -->
+    <section class="section registry" id="index" data-accent="index">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__index reveal">04 / FULL INDEX</div>
+          <div>
+            <h2 class="section__title reveal">The Registry</h2>
+            <p class="section__tag reveal" data-delay="1">Everything I've worked on, not just what's on GitHub</p>
+            <p class="section__blurb reveal" data-delay="2">
+              An index of the projects on my machine. Forks, experiments, one-off tools,
+              dashboards, half-finished ideas. Filter by ecosystem.
+            </p>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="registry__bar" id="registry-bar"></div>
+          <div class="registry__grid" id="registry-grid" role="list" aria-label="Project registry"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================= -->
+    <section class="about" id="about" data-accent="about">
+      <div class="wrap">
+        <div class="about__grid">
+          <div>
+            <h2 class="about__title reveal">
+              I work close to<br />the <em>protocol</em>.
+            </h2>
+            <div class="about__body reveal" data-delay="1">
+              <p>
+                Consensus, gossip, mempools, shielded notes, masternode quorums, vote credits,
+                skip rates. That's where I spend my time. Usually with a validator under load
+                and a profiler open, because the spec and the running code disagree.
+              </p>
+              <p>
+                Most of it never ships to a landing page. It's the monitoring, exporters, and
+                node patches that run in the background and flag when something breaks.
+              </p>
+            </div>
+          </div>
+          <div class="about__links reveal" data-delay="2">
+            <a class="about__link" href="https://github.com/liquid369" target="_blank" rel="noopener">
+              <span><small>Code</small><b>github.com/liquid369</b></span>
+              <span class="sr-only"> (opens in a new tab)</span><i aria-hidden="true">↗</i>
+            </a>
+            <a class="about__link" href="https://github.com/liquid369?tab=repositories" target="_blank" rel="noopener">
+              <span><small>82+ public repos</small><b>Browse the repositories</b></span>
+              <span class="sr-only"> (opens in a new tab)</span><i aria-hidden="true">↗</i>
+            </a>
+            <a class="about__link" href="https://github.com/PIVX-Project" target="_blank" rel="noopener">
+              <span><small>Core contribution</small><b>The PIVX Project</b></span>
+              <span class="sr-only"> (opens in a new tab)</span><i aria-hidden="true">↗</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer__row">
+      <span class="footer__mark">LIQUID<b>369</b>.WTF</span>
+      <span class="footer__meta">Static site, no framework · @liquid369</span>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/mesh.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

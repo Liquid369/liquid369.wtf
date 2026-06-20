@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://liquid369.wtf/sitemap.xml

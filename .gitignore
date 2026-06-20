@@ -1,0 +1,4 @@
+# Local QA/dev harness — not part of the published site
+qa/
+.DS_Store
+*.log
