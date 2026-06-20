@@ -18,8 +18,22 @@ jobs:
           mkdir dist
           cp -R index.html css js assets llms.txt robots.txt sitemap.xml _redirects _headers dist/
 
+      # secrets context is not allowed in an `if:`, so probe it in a step and gate on the output.
+      - name: Check Cloudflare secrets
+        id: cf
+        env:
+          TOK: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ACC: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$TOK" ] && [ -n "$ACC" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Cloudflare secrets not set; skipping deploy (this is expected until you add them)."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Deploy
-        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+        if: steps.cf.outputs.ready == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
